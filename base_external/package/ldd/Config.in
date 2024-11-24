@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LDD
+	bool "BR2_PACKAGE_LDD"
+	help
+	  Linux Device Driver Source Code
