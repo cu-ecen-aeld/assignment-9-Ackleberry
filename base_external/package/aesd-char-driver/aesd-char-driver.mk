@@ -19,8 +19,6 @@ AESD_CHAR_DRIVER_MODULE_MAKE_OPTS = KVERSION=$(LINUX_VERSION_PROBED)
 define AESD_CHAR_DRIVER_INSTALL_TARGET_CMDS
     $(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_unload $(TARGET_DIR)/usr/bin
-	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment8-buildroot/* $(TARGET_DIR)/usr/bin
-	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment5-buildroot/long_string.txt $(TARGET_DIR)/root
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/medium_long.txt $(TARGET_DIR)/root
 endef
 
