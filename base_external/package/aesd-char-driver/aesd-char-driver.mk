@@ -20,9 +20,6 @@ define AESD_CHAR_DRIVER_INSTALL_TARGET_CMDS
     $(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_unload $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/medium_long.txt $(TARGET_DIR)/root
-
-	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment9-buildroot/drivertest.sh $(TARGET_DIR)/root
-	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment9-buildroot/sockettest.sh $(TARGET_DIR)/root
 endef
 
 $(eval $(kernel-module))
